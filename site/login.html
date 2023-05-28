@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        height: 97vh;
+        width: 99%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      form {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      }
+      
+      fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      legend {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      
+      input[type="text"],
+      input[type="password"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      
+      input[type="submit"] {
+        background-color: #5D6AFB;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #3f4bcf;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" action="login.php">
+      <fieldset>
+        <legend>Вход</legend>
+        <label for="username">Никнейм:</label>
+        <input type="text" id="username" name="username" maxlength="32"><br><br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" maxlength="16"><br><br>
+        <input type="submit" value="Вход">
+      </fieldset>
+    </form>
+  </body>
+</html>

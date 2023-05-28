@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+	<title>Личный кабинет пользователя</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		form {
+			background-color: #fff;
+			padding: 20px;
+			margin: 50px auto;
+			max-width: 600px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		input[type="text"], input[type="password"] {
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		select {
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		button {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: bold;
+		}
+        .add-role__wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        .add-role__input {
+            max-width: 70%;
+            margin: 0 !important;
+        }
+        .add_role__btn {
+            padding: 4px 16px;
+        }
+	</style>
+</head>
+<body>
+	<header>Личный кабинет пользователя</header>
+	<form>
+		<label for="nickname">Никнейм:</label>
+		<input type="text" id="nickname" name="nickname">
+
+		<label for="role">Роль:</label>
+		<select id="role" name="role">
+			<option value="" disabled selected>Выберите роль</option>
+			<option value="role1">Роль 1</option>
+			<option value="role2">Роль 2</option>
+			<option value="role3">Роль 3</option>
+		</select>
+
+        <labe>Добавить роль</labe>
+        <div class="add-role__wrapper">
+            <input class="add-role__input" id="add-role" type="text" autocomplete="off">
+            <button class="add_role__btn">Добавить</button>
+        </div>
+        <button type="submit">Сохранить</button>
+		<p><a href="chat.html">ЧАТ!</a></p>
+	</form>
+    <script src="js/profile.js"></script>
+</body>
+</html>

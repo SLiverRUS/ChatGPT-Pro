@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./css/header_style.css">
+    <link rel="stylesheet" href="./css/index_style.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="index.html">
+            <img src="img/logo.svg">
+            <h1>Продвинутый<br />ChatGPT</h1>
+        </a>
+        <a href="login.html" class="blue-button">Зарегистрироваться</a>
+    </header>
+
+    <main class="column">
+        <section id="section-1">
+            <div class="description">
+                <h1 class="title">Простейший способ получения информации без цензуры</h1>
+                <p class="subtitle">Наши роли уберут искусственный барьер между ChatGPT и
+                    пользователем
+                </p>
+            </div>
+            <img src="img/logo.svg" alt="">
+        </section>
+        <section id="section-2">
+            <div class="title-and-img">
+                <img src="img/logo.svg" alt="">
+                <h1 class="title text-center">Подумайте, как вы можете зарабатывать с помощью ChatGPT PRO больше!</h1>
+            </div>
+            <div class="description">
+                <div>
+                    <img src="img/galochka.svg">
+                    <p class="tagline">Доступ без VPN</p>
+                    <p class="text">Обычный ChatGPT блокирует российских пользователей</p>
+                </div>
+                <div>
+                    <img src="img/galochka.svg">
+                    <p class="tagline">Быстрые ответы</p>
+                    <p class="text">У нас нет очереди и остановок на час</p>
+                </div>
+                <div>
+                    <img src="img/galochka.svg" id="galka_3">
+                    <p class="tagline">Русский язык</p>
+                    <p class="text">Поддерживает русский язык и интерфейс</p>
+                </div>
+                <div>
+                    <img src="img/galochka.svg">
+                    <p class="tagline">Мощь под капотом</p>
+                    <p class="text">Самые современные технологии обучения</p>
+                </div>
+            </div>
+        </section>
+        <section id="section-3">
+            <div>
+                <p class="blue title text-center">28876</p>
+                <p class="text-center">запросов с 2023 года</p>
+            </div>
+            <div>
+                <p class="blue title text-center">97%</p>
+                <p class="text-center">положительных отзывов</p>
+            </div>
+            <div>
+                <p class="blue title text-center">24/7</p>
+                <p class="text-center">поддержка</p>
+            </div>
+        </section>
+        <section class="section-4">
+            <p class="title text-center">Узнайте, как это работает за 2 минуты из видео ниже</p>
+            <div id="video-wrapper">
+                <video src="img/2MIN.mp4" controls></video>
+            </div>
+            <script>
+                const videoWrapper = document.getElementById("video-wrapper");
+                const video = videoWrapper.children[0];
+
+                function resizeVideo() {
+                    video.style.width = videoWrapper.clientWidth + "px";
+                }
+
+                window.addEventListener('resize', resizeVideo);
+                resizeVideo();
+            </script>
+        </section>
+    </main>
+</body>
+
+</html>

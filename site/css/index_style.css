@@ -1,0 +1,124 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #C9D6FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.column {
+    width: 70%;
+}
+
+.title {
+    font-size: 44px;
+    font-family: 'Arial Black';
+}
+
+.subtitle {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.tagline {
+    font-weight: 900;
+    font-size: 21px;
+}
+
+.column section {
+    width: 100%;
+    margin-top: 100px;
+}
+
+#section-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#section-1 .description {
+    width: 65%;
+}
+
+#section-1 img {
+    width: 35%;
+}
+
+#section-1 .title,
+#section-1 .subtitle {
+    text-align: center;
+}
+
+#section-2 .title-and-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#section-2 .title-and-img .title {
+    width: 65%;
+}
+
+#section-2 .title-and-img img {
+    width: 35%;
+    transform: scaleX(-100%);
+}
+
+#section-2 .description {
+    margin: 40px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10%;
+    row-gap: 10%;
+}
+
+#section-2 .description div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-2 .description div .tagline {
+    width: 20%;
+    margin: 0px 20px;
+}
+
+#section-2 .description div .text {
+    width: 40%;
+}
+
+#section-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue {
+    color: #5d6afb;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#section-3 p {
+    margin: 0;
+}
+
+#section-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#video-wrapper {
+    width: 100%;
+}

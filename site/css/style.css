@@ -1,0 +1,25 @@
+.blue-button {
+    background-color: #5D6AFB;
+    /* Зеленый цвет фона */
+    border: none;
+    /* Убрать границу */
+    color: white;
+    /* Белый цвет текста */
+    padding: 12px 24px;
+    /* Отступы внутри кнопки */
+    text-align: center;
+    /* Центрирование текста */
+    text-decoration: none;
+    /* Убрать подчеркивание ссылки */
+    display: inline-block;
+    /* Расположение кнопки в одной строке с другим контентом */
+    font-size: 16px;
+    /* Размер текста */
+    margin: 4px 2px;
+    /* Внешние отступы */
+    cursor: pointer;
+    /* Изменить вид курсора при наведении на кнопку */
+    border-radius: 8px;
+    /* Радиус скругления углов */
+}
+
